@@ -1,8 +1,7 @@
-import "./App.css"
+
 import React from 'react';
 import { Terminal, useEventQueue, textLine, textWord, commandWord } from 'crt-terminal';
-import Start from './components/Start.js'
-const bannerText = "type start";
+const bannerText = "You are in a dark cave, the smell of copper surrounds you, you can hear screams off to the right and to the left, what do you do";
 
 export default function App() {
   const eventQueue = useEventQueue();
@@ -30,7 +29,6 @@ export default function App() {
         }
         
       />
-      
     </div>
   );
 }
